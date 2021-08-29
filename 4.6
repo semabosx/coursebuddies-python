@@ -1,0 +1,19 @@
+Tüm kullanıcı adlarını ve şifreleri takip eden users  adında sözlüğe dayanarak bir kullanıcı adı ve şifrenin doğru olup olmadığını kontrol eden bir fonksiyon yazın.
+Fonksiyonunuz, verilen kullanıcı adı ve şifrenin doğru olup olmadığına bağlı olarak True veya False dönmelidir.
+
+
+
+def check_login(users, username, password):
+    for key, val in users.items():
+        if key == username and val==password:
+            return True
+    return False
+
+users={"a":"1", "b":"2", "c":"3", "d":"4", "e":"5", "f":"6"}
+try: 
+    username = input("Username: ")
+    password = input("Password: ")
+    print(check_login(users, username, password))
+except:
+    print("Please data correctly")
+    quit()
