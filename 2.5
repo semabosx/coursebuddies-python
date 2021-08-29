@@ -1,0 +1,32 @@
+Kullanıcı ‘done’ ifadesini girene kadar bir kullanıcıdan sürekli olarak tamsayı sayıları isteyen bir program yazın. 
+‘done’ girildikten sonra, sayıların en büyük ve en küçüğünü yazdırın.
+Kullanıcı geçerli bir numaradan başka bir şey girerse, onu bir try/except yardımı ile yakalayın ve uygun bir mesaj yazdırın. 
+
+
+
+largest = None
+smallest = None
+while True:
+    sayi = input("Bir sayı giriniz: ")
+    if sayi == "done" :
+        break
+    try:
+        sayi = int(sayi)
+        print(sayi)
+    except:
+        print("Lütfen bir tamsayı ya da 'done' ifadesini giriniz. ")
+        continue
+
+    if largest is None:
+        largest = sayi
+    elif sayi > largest:
+        largest = sayi
+
+
+    if smallest is None:
+        smallest = sayi
+    elif sayi< smallest:
+        smallest = sayi
+
+print("Maximum:", largest)
+print("Minimum:", smallest)
