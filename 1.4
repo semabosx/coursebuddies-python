@@ -1,0 +1,20 @@
+Brüt ücreti hesaplamak için input() kullanarak kullanıcıdan çalışma saati alın. 
+40 saate kadar, her saat başına ücret 10 TL dir. 40 saatin üstündeki saatlerin ücreti 15 TL olmaktadır. 
+Girilen saate göre ücreti hesaplayan bir kod yazınız.
+Test etmek için 30 saat değerini giriniz, sonuç 300 TL çıkmalı, ikincil test olarak 50 değerini giriniz, sonuç 550 TL çıkmalı.
+
+
+h=input("Çalışma saatinizi giriniz ")
+calısma_saati = int(h)
+calısma_saati_sınırı = 40
+calısma_saati_ücreti = 10
+ek_saat_ücreti = 15
+
+#Çalışma Saati 40 saat ve altındaysa
+if calısma_saati == calısma_saati_sınırı:
+    ücret = calısma_saati * calısma_saati_ücreti
+    print("Alacağınız ücret",ücret,"liradır")
+else:
+    ek_saat = calısma_saati - calısma_saati_sınırı
+    ücret = calısma_saati_sınırı * calısma_saati_ücreti +ek_saat * ek_saat_ücreti
+    print("Alacağınız ücret",ücret,"liradır")
