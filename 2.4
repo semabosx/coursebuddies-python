@@ -1,0 +1,28 @@
+Fizikte, bir nesnenin sabit ivmeyle hareket ederken son hızını (veya hızını) bulmak için aşağıdaki denklem kullanılabilir:
+
+vf = vi + at
+
+burada:
+
+vf= son hız
+
+vi= ilk hız
+
+a= hızlanma
+
+t= zaman
+
+İlk hız, ivme ve zaman verildiğinde, son hızı döndürecek bir fonksiyon yazın.
+
+
+
+def calculate_velocity(ilk_hız, ivme, zaman):
+    son_hız=ilk_hız+ivme*zaman
+    return son_hız
+x=input("İlk hız nedir? ")
+ilk_hız=int(x)
+y=input("cismin ivmesi kaçtır? ")
+ivme=int(y)
+z=input("geçen süre kaç saniyedir? ")
+zaman=int(z)
+print(calculate_velocity(ilk_hız, ivme, zaman))
