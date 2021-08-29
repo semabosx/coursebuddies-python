@@ -1,0 +1,28 @@
+Bu egzersizde size 3 kelimelik bir dizi ve bu üç kelimeden birine karşılık gelen bir sayı verilecek. 
+Verilen sayı sırasındaki kelimeyi iki kez yazdıran bir fonksiyon yazın.
+double_word(“one two three”, 3) –> “one two three three”
+double_word(“cat dog fish”, 2) –> “cat dog dog fish”
+cat->1.sırada
+dog->2.sırada
+fish->3.sırada,
+fonksiyonun ikinci girdisi 2 olduğu için, 2.sıradaki dog iki kez yazdırılmış.
+
+
+
+def çift_kelime(tekrar_eden_kelimenin_sırası):
+    if tekrar_eden_kelimenin_sırası==1:
+        return(a,a,b,c)
+    elif tekrar_eden_kelimenin_sırası==2:
+        return(a,b,b,c)
+    elif tekrar_eden_kelimenin_sırası==3:
+        return(a,b,c,c)
+    else:
+        return("Lütfen geçerli bir sayı giriniz.")
+
+a =input("Kelime giriniz: ")
+b =input("Kelime giriniz: ")
+c =input("Kelime giriniz: ")
+print(a,b,c)
+tekrar_eden_kelimenin_sırası=int(input("Kaçıncı kelime tekrar etsin? "))
+x=çift_kelime(tekrar_eden_kelimenin_sırası)
+print(x)
