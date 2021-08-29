@@ -1,0 +1,25 @@
+romeo.txt dosyasını açın ve satır satır okuyun.
+Her satırı, split() fonksiyonunu kullanarak satırı bir String listesine bölün .
+Program bir kelime listesi oluşturmalıdır.
+Her satırdaki her kelime için, kelimenin zaten listede olup olmadığını kontrol edin ve eğer listedeyse tekrar eklemeyin. 
+Program tamamlandığında, ortaya çıkan kelimeleri alfabetik sıraya göre sıralayın ve yazdırın.
+
+
+
+
+dosya = open("romeo.txt").read().split()
+print(dosya)
+lst = list()
+#kelimenin listede olup olmadığını kontrol etmek
+for no in dosya:
+    if no not in lst:
+        lst.append(no)
+        
+print("  ")
+
+#listedekileri sıralamak
+lst.sort()
+print(lst)
+#listedekileri alfabetik sıraya göre satır satır yazdrmak
+for satır in range(len(lst)):
+    print(lst[satır])
