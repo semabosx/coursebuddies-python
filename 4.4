@@ -1,0 +1,21 @@
+mbox-short.txt dosyasını okumak için bir program yazın ve en çok e-posta mesajını kimin gönderdiğini bulun .
+Program ‘From’ satırlarını arar ve bu satırların ikinci kelimesini postayı gönderen kişi olarak alır.
+Program, gönderenin posta adresini dosyada görünme sayısı ile eşleyen bir Python sözlüğü oluşturur. 
+Sözlük oluşturulduktan sonra program, en üretken kaydediciyi bulmak için maksimum döngü kullanarak sözlükten okur.
+
+
+
+
+counts = dict()
+fname= "mbox-short.txt"
+dosya = open(fname)
+
+for line in dosya:
+    if line.startswith("From "):
+        words=line.split()
+        counts[words[1]] = counts.get(words[1],0) + 1
+        
+for i in counts:
+    if counts[i] == max(counts.values()):
+        print("en çok tekrar eden mail: ",i,max(counts.values()),"kez")
+
