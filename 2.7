@@ -1,0 +1,21 @@
+Bu egzersizde, size bir alışveriş listesi ve bir eşya verilecek.
+Eğer verilen eşya alışveriş listesinde ise True döndürün, alışveriş listesinde değilse False döndürün.
+
+shoppıng_list(["milk","eggs","bread"],"milk")---> TRUE
+
+shoppıng_list(["mil","eggs","bread"],"candy")---> FALSEA
+
+
+#Alışveriş listemde süt,un ve yumurta var.
+madde=input("Bir madde giriniz? ")
+def alışveriş_listesi(madde):
+    if madde=="süt":
+        return "TRUE"
+    elif madde=="un":
+        return "TRUE"
+    elif madde=="yumurta":
+        return "TRUE"
+    else:
+        return"FALSE"
+
+print(alışveriş_listesi(madde))
