@@ -1,0 +1,14 @@
+Bu alıştırmada size iki kelimeden oluşan bir string(dize) veriliyor. Bu iki kelimenin değiştirildiği bir string(dize) döndürmeniz gerekir.
+Örneğin:
+switch_words("Golden Bear")---> "Bear Golden"
+switch_words("day snow")---> "snow day"
+
+
+def switch_words(a,b):
+    kelime=b+" "+a
+    return kelime
+#a ve b değişkenlerini sorduğum satırı kaldırıp direk 7.satırda yerine yazabiliriz
+a=input("Kelime giriniz: ")
+b=input("Kelime giriniz: ")
+x=switch_words(a,b)
+print(x)
