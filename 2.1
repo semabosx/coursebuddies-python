@@ -1,0 +1,26 @@
+Brüt ücreti hesaplamak için input() fonksiyonunu kullanarak kullanıcıdan çalışma saati girdisini alın.
+Buradan sonra ödeme hesaplaması mantığı için computePay() adlı bir fonksiyon oluşturup işlemler için bu fonksiyonu kullanın. 
+Çalışma saati 40 ve altındaysa saat başına ücret 10 TL’dir. 40 saatin üstünde çalışıldıysa saat başına ücret 15 lira sayılmaktadır. 
+Girilen saate göre ücreti hesaplayan, sizin tarafınızdan oluşturulan fonksiyon ile çalışan bir kod yazınız.
+Test etmek için 30 saat değerini giriniz, sonuç 300 TL çıkmalı, ikincil test olarak 50 değerini giriniz, sonuç 750 TL çıkmalı.
+
+
+
+def computepay():
+   
+    #Çalışma Saati 40 saat ve altındaysa
+    if calısma_saati<=calısma_saati_sınırı:
+        ücret = calısma_saati * calısma_saati_ücreti
+        return ücret
+    #Çalışma saati 40'ın üstündeyse
+    else:
+        ücret = calısma_saati* üst_saat_ücreti
+        return ücret
+
+h=input("Çalışma saatinizi giriniz ")
+calısma_saati = int(h)
+calısma_saati_sınırı = 40
+calısma_saati_ücreti = 10
+üst_saat_ücreti = 15
+x=computepay()
+print("Alacağınız ücret",x,"liradır")
