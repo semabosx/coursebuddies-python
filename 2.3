@@ -1,0 +1,21 @@
+Çok sayıda insanı ve çok sayıda grubu alan bir fonksiyon yazın.
+Kişiler gruplara eşit olarak bölünecektir (fazla kişiler olabilir). 
+Çift grupları oluşturduktan sonra kalan kişi sayısını döndürür.
+
+
+
+def insan(kişi_sayısı, grup_sayısı):
+    sonuç=int(kişi_sayısı/grup_sayısı)
+    kalan=int(kişi_sayısı%grup_sayısı)
+    print("Grup sayısı",sonuç)
+    print("Kalan kişi sayısı", kalan)
+    return()
+
+x=input("Kişi sayısı kaçtır? ")
+kişi_sayısı=int(x)
+y=input("grup sayısı kaçtır? ")
+grup_sayısı=int(y)
+insan(kişi_sayısı,grup_sayısı)
+
+
+
