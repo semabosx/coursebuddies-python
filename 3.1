@@ -1,0 +1,10 @@
+Aşağıdaki satırın sonundaki sayıyı çıkarmak için find () ve dizi dilimlemeyi (bkz. Bölüm 6.10) kullanarak kod yazın. 
+Çıkarılan değeri ondalıklı sayıya dönüştürün ve yazdırın.
+
+
+text = "X-DSPAM-Confidence:    0.8475";
+başlangıç=text.find("0")
+son=text.find("5")
+sayı=text[başlangıç:son+1]
+x=float(sayı)
+print(x)
