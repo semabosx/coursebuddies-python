@@ -1,0 +1,34 @@
+0.0 ile 1.0 arasında bir puan istemek için bir program yazın. Puan aralık dışındaysa bir hata yazdırın. Puan 0,0 ile 1,0 arasında ise, aşağıdaki tabloyu kullanarak bir harf notu yazdırın:
+
+Puan Not
+
+> = 0,9 A
+
+> = 0,8 B
+
+> = 0,7 C
+
+> = 0,6 D
+
+<0,6 F
+
+Kullanıcı aralık dışında bir değer girerse, uygun hata mesajı ve çıkış( quit() ) yapın.
+
+
+
+
+puan = float(input("Puanınızı giriniz "))
+
+if 1.0>=puan>=0.0: 
+    if puan>=0.9:
+        print("A")
+    elif puan>=0.8:
+        print("B")
+    elif puan>=0.7:
+        print("C")
+    elif puan>=0.6:
+        print("D")
+    elif puan<0.6:
+        print("F")
+else:
+    print("Lütfen 0.0-1.0 aralığında bir puan giriniz")
