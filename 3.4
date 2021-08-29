@@ -1,0 +1,10 @@
+Words.txt adlı dosyayı açın, dosyayı okuyun ve dosyanın içeriğini büyük harfle yazdırın. Çıktıyı üretmek için words.txt dosyasını kullanın.
+
+
+# Dosya adı olarak words.txt kullanın.
+fhand=open("words.txt")
+for lx in fhand:
+    ly=lx.rstrip()
+#rstrip sağdaki boşlukları yok eder
+    print(ly.upper())
+#upper bütün harfleri büyük harf yapar
